@@ -60,5 +60,8 @@ public class JavaSpark2 {
         df3.show();
 
 
+        Dataset<Row> df4 = sqlContext.sql("select sname,sum(sage) from t_person group by sname");
+        df4.show();
+
     }
 }
