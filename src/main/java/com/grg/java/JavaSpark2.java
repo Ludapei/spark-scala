@@ -60,8 +60,24 @@ public class JavaSpark2 {
         df3.show();
 
 
-        Dataset<Row> df4 = sqlContext.sql("select sname,sum(sage) from t_person group by sname");
+        Dataset<Row> df4 = sqlContext.sql("select sname,sum(sage) sumage from t_person group by sname");
         df4.show();
+
+        Dataset<Row> df5 = sqlContext.sql("select *, 2 as grade from t_person ");
+        df5.show();
+
+        Dataset<Row> df6= sqlContext.sql("select * from t_person where sage<15");
+        df6. createOrReplaceTempView("tmp1");
+
+        Dataset<Row> df7= sqlContext.sql("select * from t_person where sage>14");
+        df7. createOrReplaceTempView("tmp2");
+
+        Dataset<Row> df8= sqlContext.sql("select * from tmp1 join tmp2  on tmp1.sid != tmp2.sid");
+        df8.show();
+
+        Dataset<Row> df9= sqlContext.sql("select * from tmp1 join tmp2  on tmp1.sid != tmp2.sid");
+        df9.show();
+
 
     }
 }

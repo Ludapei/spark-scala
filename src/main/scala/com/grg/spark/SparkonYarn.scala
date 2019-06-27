@@ -4,7 +4,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object SparkonYarn {
   def main(args: Array[String]): Unit = {
-    val logFile = "hdfs://server202:8020/tmp/ldp/data/data2"
+    val logFile = "hdfs://server202:8020/tmp/ldp/Data/data2"
     val conf = new SparkConf().setAppName("Simple Application")
     val sc = new SparkContext(conf)
     sc.setLogLevel("WARN");

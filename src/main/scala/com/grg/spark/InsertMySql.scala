@@ -53,6 +53,6 @@ object InsertMySql {
 //`number` int(11) NOT NULL  comment 'product stock quantity',
 //`create_time` timestamp NOT NULL  DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP comment 'create time',
 //PRIMARY KEY (`id`)
-//) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'data from spark insert test';
+//) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 comment 'Data from spark insert test';
 
 

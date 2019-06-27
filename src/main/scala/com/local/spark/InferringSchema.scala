@@ -21,7 +21,7 @@ object InferringSchema {
 
     val sqlContext = new SQLContext(sc)
 
-//    val filePath="C:\\MyApplication\\Idea\\Project_bigdata\\sparkdemo3\\data.txt"
+//    val filePath="C:\\MyApplication\\Idea\\Project_bigdata\\sparkdemo3\\Data.txt"
     val filePath="C:\\MyApplication\\Idea\\Project_bigdata\\sparkdemo3\\data3.csv"
 
     val linRDD=sc.textFile(filePath).map(_.split(" "))

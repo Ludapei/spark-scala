@@ -14,7 +14,7 @@ object ReadCSV {
 
     val sqlContext = new SQLContext(sc)
 
-    //    val filePath="C:\\MyApplication\\Idea\\Project_bigdata\\sparkdemo3\\data.txt"
+    //    val filePath="C:\\MyApplication\\Idea\\Project_bigdata\\sparkdemo3\\Data.txt"
 
 //    val rdd = sqlContext.read.format("com.databricks.spark.csv").option("sep", ",")
 //      .option("header", "false")
