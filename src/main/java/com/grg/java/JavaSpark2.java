@@ -53,7 +53,6 @@ public class JavaSpark2 {
 
 
 
-
         System.out.println("df3");
         df.createOrReplaceTempView("tmp");
         Dataset<Row> df3=sqlContext.sql("select sage,sname from tmp where sage>14");

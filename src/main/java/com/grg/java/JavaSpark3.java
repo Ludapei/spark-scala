@@ -28,6 +28,7 @@ public class JavaSpark3 {
         //修改路径
         JavaRDD<String> source = sc.read().textFile("C:\\MyApplication\\Idea\\Project_bigdata\\sparkdemo3\\data5.csv").javaRDD();
 
+
         source.foreachPartition(new VoidFunction<Iterator<String>>() {
         @Override
         public void call(Iterator<String> iter) throws Exception {
@@ -46,7 +47,7 @@ public class JavaSpark3 {
          }
         });
 
-
+//
 //        Dataset<Row> df = sc.createDataFrame(rowRDD, Data.class);
 //
 //
